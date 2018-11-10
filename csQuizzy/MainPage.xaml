@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="csQuizzy.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:csQuizzy"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Loaded="Page_Loaded">
+
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button x:Name="btn1" Background="Pink" Height="45" Margin="5" Click="btn_Click">
+                <TextBlock Text="{Binding text}"/>
+            </Button>
+            <Button x:Name="btn2" Background="CadetBlue" Height="45" Margin="5" Click="btn_Click">
+                <TextBlock Text="{Binding text}"/>
+            </Button>
+        </StackPanel>
+        <TextBlock x:Name="txtxStatus" VerticalAlignment="Bottom" TextWrapping="Wrap"/>
+    </Grid>
+</Page>
